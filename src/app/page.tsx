@@ -1,12 +1,11 @@
-'use client'
-import Spline from '@splinetool/react-spline';
+import Nav from "@/components/Nav";
+import Hero from "@/components/Hero";
 
-export default function Hero() {
+export default function Home() {
   return (
-    <section className="flex flex-col w-full h-screen overflow-hidden">
-      <div className="w-full h-full">
-        <Spline scene="https://prod.spline.design/OIHZKF-QfaUqZJvC/scene.splinecode" />
-      </div>
-    </section>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <Hero />
+    
+    </main>
   );
 }

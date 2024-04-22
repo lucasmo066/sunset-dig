@@ -8,7 +8,7 @@ export default function Nav() {
   return (
     <header>
         <nav>
-            <ul className="flex items-center justify-center gap-4 p-4">
+            <ul className="flex items-center justify-center gap-4 p-8">
                 <Image 
                     src="/vercel.svg"
                     alt="logo"
