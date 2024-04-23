@@ -5,13 +5,19 @@ import Nav from "../components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
+//set the metadata
+// export const meta = {
+//   title: "Sunset Digital",
+//   description: "Sunset Digital is a digital agency that helps businesses grow online.",
+//   keywords: "web design, web development, digital marketing",
+// };
 
 export default function RootLayout({
   children,
   showNav = true // Default to true, so Nav is shown by default
 }: Readonly<{
   children: React.ReactNode;
-  showNav?: boolean; // Prop to indicate whether to show Nav or not
+  showNav?: boolean;
 }>) {
   return (
     <html lang="en">

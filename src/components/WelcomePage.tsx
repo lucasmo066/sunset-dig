@@ -10,7 +10,7 @@ const WelcomePage = ({ onEnter }: { onEnter: () => void }) => {
             width={300}
             height={300}
         />
-        <button onClick={onEnter} className="bg-transparent border-2 border-orange-600 text-primary px-6 py-4 rounded-lg">Enter site</button>
+        <button onClick={onEnter} className="bg-transparent border-2 border-orange-600 text-primary px-6 py-4 rounded-lg">Enter Site</button>
       </div>
     );
   }

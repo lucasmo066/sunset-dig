@@ -1,16 +1,18 @@
 'use client'
 import React, { useState } from 'react';
 import Hero from "@/components/Hero";
-import WhatWeDo from "@/components/WhatWeDoSection";
 import WelcomePage from "@/components/WelcomePage";
 import RootLayout from "@/app/layout";
+import MeteorSection from '@/components/MeteorSection';
 
 export default function Home() {
   const [showWelcome, setShowWelcome] = useState(true);
 
   const handleEnter = () => {
     setShowWelcome(false);
-    // You can add additional logic here, like navigating to another page.
+
+    // Save to local storage
+    localStorage.setItem('visited', 'true');
   };
 
   return (
@@ -19,7 +21,7 @@ export default function Home() {
         {showWelcome ? <WelcomePage onEnter={handleEnter} /> : (
           <>
             <Hero />
-            <WhatWeDo />
+            <MeteorSection h2Content="Harnessing the latest technologies, we craft innovative solutions to propel your online presence and drive growth. Whether you're diving into e-commerce or a small business seeking digital transformation, we're here to deliver tailored strategies for success." buttonText="Explore Projects" />
           </>
         )}
       </main>
