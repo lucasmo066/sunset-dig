@@ -10,7 +10,7 @@ export default function Nav() {
         <nav>
             <ul className="flex items-center justify-center gap-4 p-2">
                 <Image 
-                    src="/2.svg"
+                    src="/5.svg"
                     alt="Sunset Digital logo"
                     width={100}
                     height={30}
