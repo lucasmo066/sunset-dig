@@ -4,6 +4,9 @@ import Spline from '@splinetool/react-spline';
 import { Button } from './ui/button';
 import Link from 'next/link';
 
+
+//need to set h1 and p tag as metadata since its in the spline scene
+
 export default function Hero() {
   return (
     <section className="relative flex flex-col w-full overflow-hidden">

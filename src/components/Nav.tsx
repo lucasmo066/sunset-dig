@@ -8,13 +8,12 @@ export default function Nav() {
   return (
     <header>
         <nav>
-            <ul className="flex items-center justify-center gap-4 p-8">
+            <ul className="flex items-center justify-center gap-4 p-2">
                 <Image 
-                    src="/vercel.svg"
-                    alt="logo"
+                    src="/2.svg"
+                    alt="Sunset Digital logo"
                     width={100}
-                    height={50}
-                    className="dark:invert"
+                    height={30}
                     priority
                 />
                 <li>
