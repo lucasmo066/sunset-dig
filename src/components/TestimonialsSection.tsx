@@ -3,8 +3,19 @@ import { CardStack } from "@/components/ui/card-stack";
 import { cn } from "@/lib/utils";
 
 export function TestimonialsSection() {
+{/*I need to make this a full section with the testimonials cards being just a small part of the section, maybe we add a picture since there really isnt one yet and a paragrph about out focus on customer service*/}
   return (
-    <div className="h-[40rem] flex items-center justify-center w-full">
+    <div className="border-2 border-blue-400 h-[40rem] flex items-center justify-start w-full p-10">
+        <div className="border-2 border-orange-400 flex flex-col items-center justify-center w-1/2">
+            <h2 className="text-6xl font-bold text-primary text-center mb-8">
+            See What Our clients Are Saying
+            </h2>
+            <p className="text-lg text-center">
+            We take pride in our customer service and strive to provide the best
+            experience possible. We are always looking for feedback and ways to
+            improve our services.
+            </p>
+        </div>
       <CardStack items={CARDS} />
     </div>
   );

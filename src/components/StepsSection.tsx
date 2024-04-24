@@ -9,19 +9,19 @@ export function StepsSection() {
     {
       step: "Step 1",
       title: "Set Up Initial Meeting",
-      description:
+      explanation:
         "We set up a quick 15-minute meeting to go over what the client wants.",
     },
     {
       step: "Step 2",
       title: "Sit Back and Relax",
-      description:
+      explanation:
         "Once subscribed, the client can sit back and relax while our team of experts build your all-in-one premium healthcare website. We'll keep you updated every step of the way.",
     },
     {
       step: "3",
       title: "Review and Launch!",
-      description:
+      explanation:
         "Once your site is ready, we'll send you a link to review it. If the client is happy with everything, we'll launch your site and you're good to go! It's that simple.",
     },
   ];
@@ -40,7 +40,7 @@ export function StepsSection() {
         description: (
           <>
             <h3 className="text-2xl font-bold">{step.title}</h3>
-            <p className="mt-3">{step.description}</p>
+            <p className="mt-3">{step.explanation}</p>
           </>
         ),
         link: `#${index}`,
