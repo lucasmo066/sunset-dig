@@ -8,6 +8,7 @@ import MeteorSection from '@/components/MeteorSection';
 
 import { StepsSection } from '@/components/StepsSection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
+import PricingSection from '@/components/PricingSection';
 
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
            <TestimonialsSection />
            <h4 className='my-10'>What you get section here</h4>
            <MeteorSection h2Content="Backed by a 100% Money-Back Guarantee. We're confident in our ability to deliver results, and we stand by our work. If you're not satisfied with our services, we'll refund your money—no questions asked." buttonText="Where Do I Start?" />
-           <h4 className="my-10">Pricing section here</h4>
+           <PricingSection />
            <h4 className="my-10">FAQ section here</h4>
            <h4 className="my-10">Contact Us section here</h4>
            <footer className="w-full bg-neutral-950 border border-neutral-700 text-primary text-center py-10">

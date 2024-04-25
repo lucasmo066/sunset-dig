@@ -22,7 +22,7 @@ export function Clock() {
   }
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 p-2 text-white text-center bg-gray-900">
+    <div className="fixed bottom-0 left-0 right-0 p-2 text-primary text-center">
       {time}
     </div>
   );
