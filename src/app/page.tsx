@@ -33,9 +33,9 @@ export default function Home() {
            <h4 className='my-10'>What you get section here</h4>
            <MeteorSection h2Content="Backed by a 100% Money-Back Guarantee. We're confident in our ability to deliver results, and we stand by our work. If you're not satisfied with our services, we'll refund your money—no questions asked." buttonText="Where Do I Start?" />
            <PricingSection />
-           <h4 className="my-10">FAQ section here</h4>
+           <h4 className="border">FAQ section here</h4>
            <h4 className="my-10">Contact Us section here</h4>
-           <footer className="w-full bg-neutral-950 border border-neutral-700 text-primary text-center py-10">
+           <footer className="w-full bg-neutral-950 border border-primary text-primary text-center py-8">
            <Image
                 src="/3.svg"
                 alt="Sunset Digital Logo"
@@ -44,7 +44,7 @@ export default function Home() {
                 className='mx-auto mt-5'
               />
               
-             <p>&copy; 2024 Sunset Digital</p>
+             <p className="text-sm font-thin">&copy; 2024 Sunset Digital</p>
             </footer>
           </>
         )}

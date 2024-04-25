@@ -8,7 +8,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({ active, onClick, children }
   return (
     <button
       className={`${
-        active ? "bg-primary text-white font-light shadow-sm shadow-black" : "bg-white text-black font-light"
+        active ? "bg-primary text-white font-light shadow-sm shadow-orange-900" : "bg-white text-black font-light"
       } px-4 py-2 rounded-full`}
       onClick={onClick}
     >

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { ArrowRight } from "lucide-react";
 import BlackLinkCard from "./BlackLinkCard";
-import { Button } from "@/components/ui/button";
-import PricingCard from "./PricingCard"; // Adjust the path as needed
+import PricingCard from "./PricingCard"; 
 
 const PricingSection = () => {
   const [selectedPlan, setSelectedPlan] = useState("basic");
@@ -32,12 +30,12 @@ const PricingSection = () => {
   };
 
   return (
-    <section className="flex flex-col w-full px-5 py-10 sm:px-8 border-4 border-red-500">
+    <section className="flex flex-col w-full px-5 py-10 sm:px-8">
       <div>
-        <h2 className="text-5xl font-bold text-center text-primary mb-4">Pricing</h2>
-        <p className="text-center mb-8">Choose the plan that works best for you.</p>
+        <h2 className="text-5xl md:text-6xl font-medium text-center text-primary mb-4">Pricing</h2>
+        <p className="text-center font-extralight mb-20">Choose the plan that works best for you.</p>
         
-        <div className="border flex flex-col justify-center md:flex-row gap-4">
+        <div className="flex flex-col justify-center md:flex-row gap-8">
           {/* Black background div */}
           <BlackLinkCard />
   

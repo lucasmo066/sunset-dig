@@ -28,7 +28,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
     <div className="bg-gray-100 text-black px-6 py-10 rounded-lg">
       <div>
         <div className="flex justify-between items-start">
-            <h3 className="text-3xl font-medium mb-4">
+            <h3 className="text-3xl font-normal mb-4">
                 Membership
             </h3>
             <div className="border border-gray-300 bg-white rounded-full flex justify-between">
