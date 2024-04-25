@@ -28,7 +28,7 @@ export function StepsSection() {
 
   return (
     <div className="mx-auto mt-10 px-8 py-10">
-      <h2 className="text-5xl md:text-6xl text-center font-medium text-primary mb-4">
+      <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">
         How it works
       </h2>
       <p className="text-center font-extralight mb-20 mx-10">

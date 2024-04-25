@@ -7,7 +7,7 @@ export function TestimonialsSection() {
   return (
     <div className="border-2 border-blue-400 h-[40rem] flex items-center justify-start w-full p-10">
         <div className="border-2 border-orange-400 flex flex-col items-center justify-center w-1/2">
-            <h2 className="text-6xl font-bold text-primary text-center mb-8">
+            <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">
             See What Our clients Are Saying
             </h2>
             <p className="text-lg text-center">
