@@ -68,7 +68,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-lg h-full w-full px-6 py-4 overflow-hidden bg-gray-100 dark:bg-neutral-900 border dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-lg h-full w-full px-6 py-4 overflow-hidden bg-gray-100 dark:bg-neutral-900 border border-primary dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
@@ -86,7 +86,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("w-1/12 text-zinc-100 font-bold text-center border border-zinc-100 rounded-full p-4 mt-2", className)}>
+    <h4 className={cn("w-1/12 text-primary dark:text-zinc-100 font-bold text-center border border-primary dark:border-zinc-100 rounded-full p-4 mt-2", className)}>
       {children}
     </h4>
   );
@@ -101,7 +101,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed font-light ",
+        "mt-8 text-black dark:text-zinc-400 tracking-wide leading-relaxed font-extralight",
         className
       )}
     >
