@@ -84,7 +84,7 @@ const CARDS = [
     designation: "Founder, ABC Company",
     content: (
       <p>
-        &quot;Working with Sunset Digital has been a game-changer. Their expertise in technology and innovative solutions has propelled our online presence. They&apos;ve delivered tailored strategies that significantly drove our growth.&qout;
+        &quot;Working with Sunset Digital has been a game-changer. Their expertise in technology and innovative solutions has propelled our online presence. They&apos;ve delivered tailored strategies that significantly drove our growth.&quot;
       </p>
     ),
   },
