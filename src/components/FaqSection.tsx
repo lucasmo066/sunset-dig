@@ -62,8 +62,8 @@ const faqItems = [
   export default function FaqsSection() {
     return (
       <div className=" flex flex-col px-6 py-10">
-        <h1 className="text-5xl md:text-6xl font-medium text-center text-primary mb-4 px-10">Frequently Asked Questions</h1>
-        <p className="text-center text-lg font-extralight mb-20">
+        <h1 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">Frequently Asked Questions</h1>
+        <p className="text-center font-extralight mb-20">
             Get Clarifications Here
         </p>
         <div className="mt-8 p-2 items-center">

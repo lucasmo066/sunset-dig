@@ -10,6 +10,7 @@ import { StepsSection } from '@/components/StepsSection';
 import { TestimonialsSection } from '@/components/TestimonialsSection';
 import PricingSection from '@/components/PricingSection';
 import FaqsSection from '@/components/FaqSection';
+import ContactSection from '@/components/ContactSection';
 
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
            <MeteorSection h2Content="Backed by a 100% Money-Back Guarantee. We're confident in our ability to deliver results, and we stand by our work. If you're not satisfied with our services, we'll refund your money—no questions asked." buttonText="Where Do I Start?" />
            <PricingSection />
           <FaqsSection />
-           <h4 className="my-10">Contact Us section here</h4>
+          <ContactSection />
            <footer className="w-full bg-neutral-950 border border-primary text-primary text-center py-8">
            <Image
                 src="/3.svg"

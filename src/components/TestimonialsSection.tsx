@@ -1,22 +1,58 @@
-"use client";
 import { CardStack } from "@/components/ui/card-stack";
-import { cn } from "@/lib/utils";
+import { QuoteCard } from "@/components/QuoteCard";
+import Image from "next/image";
+import {cn} from '@/lib/utils';
+import { Button } from "./ui/button";
 
 export function TestimonialsSection() {
-{/*I need to make this a full section with the testimonials cards being just a small part of the section, maybe we add a picture since there really isnt one yet and a paragrph about out focus on customer service*/}
   return (
-    <div className="border-2 border-blue-400 h-[40rem] flex items-center justify-start w-full p-10">
-        <div className="border-2 border-orange-400 flex flex-col items-center justify-center w-1/2">
-            <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">
-            See What Our clients Are Saying
-            </h2>
-            <p className="text-lg text-center">
-            We take pride in our customer service and strive to provide the best
-            experience possible. We are always looking for feedback and ways to
-            improve our services.
-            </p>
+    <div className="h-full w-full flex flex-col items-center justify-center p-8">
+      {/* Section Header */}
+      <div className=" flex flex-col items-center justify-center w-full">
+        <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">
+          See What Our Clients Are Saying
+        </h2>
+        <p className="text-md sm:text-md text-center font-extralight px-10">
+          We take pride in our customer service and strive to provide the best
+          experience possible. We are always looking for feedback and ways to
+          improve our services.
+        </p>
+      </div>
+
+
+      <div className="grid w-full h-full grid-cols-1 md:grid-cols-2 gap-8 p-8 my-10">
+      {/* Testimonials */}
+      <div className="md:col-span-2">
+        <div className="col-span-1 md:col-span-2">
+          <CardStack items={CARDS} />
         </div>
-      <CardStack items={CARDS} />
+      </div>
+      {/* Quote Card and Content */}
+      <div className="">
+        {/* On Small Screens */}
+        <div className="my-8 md:hidden">
+          <h3 className="text-4xl font-semibold text-center text-black dark:text-white">It’s “you’ll never go<br></br> back” better.</h3>
+          <p className="text-center font-extralight my-5 px-10">Sunset Digital replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs and final product delivered so fast that it will blow your mind.</p>
+          <Button className="m-10 py-6 px-8">Get Started</Button>
+        </div>
+        {/* On Larger Screens */}
+        <div className="hidden md:block">
+          <h3 className=" mb-10 text-5xl font-semibold text-center text-black dark:text-white">It’s “you’ll never go<br></br> back” better.</h3>
+        </div>
+        <div className="hidden md:block">
+          <p className="text-center font-light mb-10">Sunset Digital replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs and final product delivered so fast that it will blow your mind.</p>
+          <div className="flex justify-center mt-2">
+          <Button className="py-6 px-10 align-middle text-center justify-center">See Plans</Button>
+          </div>
+        </div>
+      </div>
+      {/* Quote Card */}
+      <div className="">
+        <div className="col-span-1 md:col-span-1">
+          <QuoteCard />
+        </div>
+      </div>
+    </div>
     </div>
   );
 }
@@ -44,39 +80,31 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Manu Arora",
-    designation: "Senior Software Engineer",
+    name: "John Doe",
+    designation: "Founder, ABC Company",
     content: (
       <p>
-        These cards are amazing, <Highlight>I want to use them</Highlight> in my
-        project. Framer motion is a godsend ngl tbh fam 🙏
+        &quot;Working with Sunset Digital has been a game-changer. Their expertise in technology and innovative solutions has propelled our online presence. They&apos;ve delivered tailored strategies that significantly drove our growth.&qout;
       </p>
     ),
   },
   {
     id: 1,
-    name: "Elon Musk",
-    designation: "Senior Shitposter",
+    name: "Jane Smith",
+    designation: "CEO, XYZ Enterprises",
     content: (
       <p>
-        I dont like this Twitter thing,{" "}
-        <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-        would like to call it <Highlight>X.com</Highlight> so that it can easily
-        be confused with adult sites.
+        &qout;Our experience with Sunset Digital has been exceptional. Their e-commerce-focused approach has boosted our online sales. Highly recommended for effective online solutions.&qout;
       </p>
     ),
   },
   {
     id: 2,
-    name: "Tyler Durden",
-    designation: "Manager Project Mayhem",
+    name: "David Williams",
+    designation: "Marketing Manager, LMN Corporation",
     content: (
       <p>
-        The first rule of
-        <Highlight>Fight Club</Highlight> is that you do not talk about fight
-        club. The second rule of
-        <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-        club.
+        &qout;Sunset Digital provides outstanding customer service and websites that surpass the competition. With their membership program, managing our website has been a breeze.&qout;
       </p>
     ),
   },
