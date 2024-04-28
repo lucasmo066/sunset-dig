@@ -56,7 +56,7 @@ export const CardStack = ({
             zIndex: cards.length - index,
           }}
         >
-          <div className="font-extralight text-neutral-700 dark:text-neutral-200 overflow-y-auto">
+          <div className="text-sm sm:text-md md:text-lg font-extralight text-neutral-700 dark:text-neutral-200 overflow-y-auto">
             {card.content}
           </div>
           <div>

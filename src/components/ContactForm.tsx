@@ -46,7 +46,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="border border-gray-800 shadow-md shadow-neutral-700 my-10 w-full py-6 px-12 gap-4 bg-zinc-100 dark:bg-neutral-900 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="border border-gray-300 my-10 w-full py-6 px-12 gap-4 bg-zinc-100 dark:border-gray-700 dark:bg-neutral-900 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         <FormField
           control={form.control}
           name="name"

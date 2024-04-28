@@ -86,31 +86,31 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "John Doe",
-    designation: "Founder, ABC Company",
+    name: "Julio Ferreira Sr.",
+    designation: "CEO, Alliance Auto Brokers",
     content: (
       <p>
-        &quot;Working with Sunset Digital has been a game-changer. Their expertise in technology and innovative solutions has propelled our online presence. They&apos;ve delivered tailored strategies that significantly drove our growth.&quot;
+        &quot;Sunset Digital has been a game-changer. Their expertise in innovative solutions has propelled our online presence and credibility. I can focus on doing my job because I know they&apos;ll handle the site!&quot;
       </p>
     ),
   },
   {
     id: 1,
-    name: "Jane Smith",
-    designation: "CEO, XYZ Enterprises",
+    name: "Teddy Edwar",
+    designation: "Owner, Sahara Grill",
     content: (
       <p>
-        &qout;Our experience with Sunset Digital has been exceptional. Their e-commerce-focused approach has boosted our online sales. Highly recommended for effective online solutions.&qout;
+        &quot;We did not have much of an online presence before Lucas and Sunset came along. They have helped us immensely with a top of the line website that does well on SEO. They really do go above and beyond! &quot;
       </p>
     ),
   },
   {
     id: 2,
-    name: "David Williams",
+    name: "David Shakur",
     designation: "Marketing Manager, LMN Corporation",
     content: (
       <p>
-        &qout;Sunset Digital provides outstanding customer service and websites that surpass the competition. With their membership program, managing our website has been a breeze.&qout;
+        &quot;Sunset Digital provides outstanding customer service and websites that surpass the competition. With their membership program, managing our website has been a breeze!&quot;
       </p>
     ),
   },
