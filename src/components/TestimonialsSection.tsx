@@ -6,13 +6,13 @@ import { Button } from "./ui/button";
 
 export function TestimonialsSection() {
   return (
-    <div className="h-full w-full flex flex-col items-center justify-center p-8">
+    <div className="h-full w-full flex flex-col items-center justify-center py-10 px-4 lg:w-3/4">
       {/* Section Header */}
       <div className=" flex flex-col items-center justify-center w-full">
-        <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">
+        <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent pb-3 mb-2">
           See What Our Clients Are Saying
         </h2>
-        <p className="text-md sm:text-md text-center font-extralight px-10">
+        <p className="text-center font-extralight px-5 md:px-10 mb-10 md:text-lg">
           We take pride in our customer service and strive to provide the best
           experience possible. We are always looking for feedback and ways to
           improve our services.
@@ -29,23 +29,29 @@ export function TestimonialsSection() {
       </div>
       {/* Quote Card and Content */}
       <div className="">
-        {/* On Small Screens */}
-        <div className="my-8 md:hidden">
-          <h3 className="text-4xl font-semibold text-center text-black dark:text-white">It’s “you’ll never go<br></br> back” better.</h3>
-          <p className="text-center font-extralight my-5 px-10">Sunset Digital replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs and final product delivered so fast that it will blow your mind.</p>
-          <Button className="m-10 py-6 px-8">Get Started</Button>
-        </div>
-        {/* On Larger Screens */}
-        <div className="hidden md:block">
-          <h3 className=" mb-10 text-5xl font-semibold text-center text-black dark:text-white">It’s “you’ll never go<br></br> back” better.</h3>
-        </div>
-        <div className="hidden md:block">
-          <p className="text-center font-light mb-10">Sunset Digital replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs and final product delivered so fast that it will blow your mind.</p>
-          <div className="flex justify-center mt-2">
-          <Button className="py-6 px-10 align-middle text-center justify-center">See Plans</Button>
-          </div>
-        </div>
+  <div className="flex flex-col justify-center"> {/* Center content */}
+    {/* On Small Screens */}
+    <div className="my-8 md:hidden">
+      <h3 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent pb-3 mb-2">It’s “you’ll never go<br></br> back” better.</h3>
+      <p className="text-center font-extralight my-5 px-10">Sunset Digital replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs and final product delivered so fast that it will blow your mind.</p>
+      <div className="flex justify-center">
+    
+      <Button className="m-10 py-6 px-8 align-middle text-center justify-center">See Plans</Button>
       </div>
+    </div>
+    {/* On Larger Screens */}
+    <div className="hidden md:block items-center justify-center">
+      <h3 className="bg-gradient-to-br from-orange-400 to-orange-800 bg-clip-text font-medium tracking-tight text-transparent text-xl sm:text-5xl lg:text-7xl text-center relative z-50 mb-3">It’s “you’ll never go<br></br> back” better.</h3>
+    </div>
+    <div className="hidden md:block">
+      <p className="lg:text-xl text-center font-light mb-10">Sunset Digital replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs and final product delivered so fast that it will blow your mind.</p>
+      <div className="flex justify-center mt-2">
+        <Button className="py-6 px-10 align-middle text-center justify-center">See Plans</Button>
+      </div>
+    </div>
+  </div>
+</div>
+
       {/* Quote Card */}
       <div className="">
         <div className="col-span-1 md:col-span-1">

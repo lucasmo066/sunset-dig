@@ -27,11 +27,11 @@ export function StepsSection() {
   ];
 
   return (
-    <div className="mx-auto mt-10 px-8 py-10">
+    <div className="mx-auto mt-10 px-8 py-10 lg:w-3/4">
       <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">
         How it works
       </h2>
-      <p className="text-center font-extralight mb-20 mx-10">
+      <p className="text-center font-extralight mb-10 md:text-lg">
         We make the process of getting your website up and running as simple as
         possible. Here&apos;s how it works:
       </p>

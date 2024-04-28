@@ -1,16 +1,12 @@
-'use client'
-
 import { IconBolt, IconMoneybag } from "@tabler/icons-react";
 import { CheckCheck, ExpandIcon, HandPlatterIcon, StoreIcon } from "lucide-react";
 
-
-
 export default function MembershipBenefits() {
 return (
-    <div className="w-full h-full my-10 px-4 md:px-10">
+    <div className="w-full h-full my-10 px-4 md:px-10 xl:w-3/4">
         <h2 className="mt-10 text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">Membership Benefits</h2>
         <p className="text-center font-extralight mb-20 md:text-lg">Perks so good you&apos;ll never need to go anywhere else for your design. Seriously.</p>
-
+        
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <div className="border border-gray-200 bg-zinc-100 dark:border-gray-700 dark:bg-neutral-800 py-8 px-4">
                 <h2 className="text-2xl font-semibold text-primary text-center pb-4">Fixed Monthly Rate</h2>
@@ -41,9 +37,7 @@ return (
                 <h2 className="text-2xl font-semibold text-primary text-center pb-4">Flexible and Scalable</h2>
                 <ExpandIcon size={48} className="mx-auto text-primary" />
                 <p className="text-center font-extralight pt-5">Scale up or down as needed, and pause or cancel at anytime.</p>
-               
             </div>
-            
         </div>
   </div>
 );
