@@ -25,7 +25,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   membershipPlans,
 }) => {
   return (
-    <div className="bg-gray-100 text-black px-6 py-10 rounded-lg">
+    <div className="bg-zinc-100 text-black px-6 py-10 rounded-lg">
       <div>
         <div className="flex justify-between items-start">
             <h3 className="text-3xl font-normal mb-4">
