@@ -46,7 +46,11 @@ export function TestimonialsSection() {
     <div className="hidden md:block">
       <p className="lg:text-xl text-center font-light mb-10">Sunset Digital replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs and final product delivered so fast that it will blow your mind.</p>
       <div className="flex justify-center mt-2">
-        <Button className="py-6 px-10 align-middle text-center justify-center">See Plans</Button>
+      <a href="#pricing">
+        <Button className="py-6 px-10 align-middle text-center justify-center">
+          See Plans
+            </Button>
+      </a>
       </div>
     </div>
   </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ToggleButton from "./ToggleButton";
 import { Button } from "@/components/ui/button";
 import WhatsIncluded from "./WhatsIncluded";
+import Link from "next/link";
 
 interface PricingCardProps {
   handlePlanToggle: (plan: string) => void;
@@ -22,8 +23,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
   handlePlanToggle,
   handlePeriodToggle,
   membershipPlans,
-  selectedPlan="basic",
-  selectedPeriod="monthly",
+  selectedPlan="growth",
+  selectedPeriod="yearly",
 }) => {
   return (
     <div className="bg-zinc-100 text-black px-6 py-10 rounded-lg">
@@ -80,7 +81,11 @@ const PricingCard: React.FC<PricingCardProps> = ({
       
       <div className="flex items-center justify-center gap-4">
         <Button className="bg-primary text-white px-10 py-6">Get Started</Button>
-        <p className="text-sm font-light">or <u>book a call</u></p>
+        <p className="text-sm font-light">or 
+        <Link href="https://www.calendly.com">
+          <u> book a call</u>
+        </Link>
+        </p>
       </div>
     </div>
   );

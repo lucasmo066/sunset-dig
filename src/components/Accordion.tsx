@@ -13,7 +13,7 @@ import {
   
   export default function DynamicAccordion({ items }: { items: AccordionItem[] }) {
     return (
-      <Accordion type="single" collapsible >
+      <Accordion type="single" collapsible>
         {items.map((item) => (
           <AccordionItem key={item.value} value={item.value}>
             <AccordionTrigger className="text-primary">{item.trigger}</AccordionTrigger>

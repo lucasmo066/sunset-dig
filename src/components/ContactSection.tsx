@@ -2,7 +2,7 @@ import {ContactForm} from '@/components/ContactForm';
 
 export default function ContactSection () {
     return (
-        <div className="flex flex-col items-center justify-center w-full p-6">
+        <div id="contact" className="flex flex-col items-center justify-center w-full p-6">
             <div className="w-full text-center items-center justify-center px-8 flex">
             <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">
                     Contact Us

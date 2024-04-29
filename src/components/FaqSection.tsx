@@ -18,11 +18,6 @@ const faqItems = [
       content: "With our subscription, you can submit unlimited content and update requests. We handle these one at a time to ensure each task receives dedicated attention, guaranteeing quality and efficiency.",
     },
     {
-      value: "item-4",
-      trigger: "Who Are Your Investors And What Deal Sizes Are You Targeting?",
-      content: "Most requests are fulfilled within a few days, depending on complexity. We prioritize efficiency and quality, ensuring your healthcare website remains dynamic and up-to-date."
-    },
-    {
         value: "item-5",
         trigger: "Who will be developing and designing my website?",
         content: "Our team consists of experienced developers and designers specializing in web solutions, leveraging AI tools to enhance workflows. For specific advanced requests, we collaborate with specialized partners to meet your needs."
@@ -62,8 +57,8 @@ const faqItems = [
   export default function FaqsSection() {
     return (
       <div className=" flex flex-col px-6 py-10">
-        <h1 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">Frequently Asked Questions</h1>
-        <p className="text-center font-extralight mb-20">
+        <h1 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent pb-3 mb-4">Frequently Asked Questions</h1>
+        <p className="text-center font-extralight mb-10 md:text-lg">
             Get Clarifications Here
         </p>
         <div className="mt-8 p-2 items-center">
