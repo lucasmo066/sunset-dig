@@ -9,8 +9,6 @@ import PricingSection from '@/components/PricingSection';
 import FaqsSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import MembershipBenefits from '@/components/MembershipBenefits';
-import Head from 'next/head';
-
 
 export default function Home() {
 return (
