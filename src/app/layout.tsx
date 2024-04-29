@@ -24,14 +24,16 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
+      <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        
           <main>
           <Nav />
             {children}
           </main>
-        </ThemeProvider>
+      
       </body>
+      </ThemeProvider>
     </html>
   );
 }
