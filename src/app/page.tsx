@@ -21,7 +21,7 @@ export default function Home() {
         <MeteorSection h2Content="Backed by a 100% Money-Back Guarantee. We're confident in our ability to deliver results, and we stand by our work. If you're not satisfied with our services, we'll refund your money—no questions asked." buttonText="Where Do I Start?" />
         <PricingSection />
         <FaqsSection />
-         <ContactSection /> {/* Pass onSubmitSuccess callback as prop */}
+         <ContactSection /> 
         <footer className="w-full bg-neutral-950 border border-primary text-primary text-center py-8">
           <Image
             src="/3.svg"
