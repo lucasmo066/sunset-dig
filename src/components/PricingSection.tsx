@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from "react";
 import BlackLinkCard from "./BlackLinkCard";
 import PricingCard from "./PricingCard"; 
@@ -30,7 +32,7 @@ const PricingSection = () => {
   };
 
   return (
-    <section className="flex flex-col w-full px-5 py-10 sm:px-8">
+    <section id="#pricing" className="flex flex-col w-full px-5 py-10 sm:px-10">
       <div>
         <h2 className="text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent pt-10 pb-3 mb-4">Pricing</h2>
         <p className="text-center font-extralight px-5 md:px-10 lg:px-20 mb-10 md:text-lg">Choose the plan that works best for you.</p>

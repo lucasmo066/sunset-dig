@@ -1,6 +1,7 @@
+import { Check } from "lucide-react";
 import React, { useState } from "react";
 
-const WhatsIncluded = () => {
+const WhatsIncluded = ({ selectedPlan }) => {
   const initialShowMoreState = false;
   const [showMore, setShowMore] = useState(initialShowMoreState);
 
@@ -8,12 +9,11 @@ const WhatsIncluded = () => {
     setShowMore(!showMore);
   };
 
-  const includedItems = [
+  const basicIncludedItems = [
     "AI Powered CMS",
     "Up to 1 team member",
     "Up to 1 requests at a time",
     "Analytics Integrations",
-    "Patient Education Tools",
     "Up to 1 brand or company",
     "2 SEO blog posts per month",
     "Fully SEO Optimized Website",
@@ -27,6 +27,26 @@ const WhatsIncluded = () => {
     "All-in-One HIPAA Compliant Website",
   ];
 
+  const growthIncludedItems = [
+    "AI Powered CMS",
+    "Up to 5 team members",
+    "Up to 2 requests at a time",
+    "Analytics Integrations", 
+    "Up to 2 brands or companies",
+    "4 SEO blog posts per month",
+    "Fully SEO Optimized Website",
+    "Lifetime Website Support",
+    "Lifetime Software Updates",
+    "Unlimited Design Requests",
+    "Unlimited Development Requests",
+    "Unlimited Content/SEO Requests",
+    "Hosting & API Uptime Guarantee",
+    "Advanced AI Workflows & Automation",
+    "All-in-One HIPAA Compliant Website",
+  ];
+
+  const includedItems = selectedPlan === 'growth' ? growthIncludedItems : basicIncludedItems;
+  
   const displayedItems = showMore ? includedItems : includedItems.slice(0, 8);
 
   return (
@@ -35,7 +55,8 @@ const WhatsIncluded = () => {
       <div className="grid grid-cols-2 gap-2">
         {displayedItems.map((item, index) => (
           <div key={index}>
-            <ul>
+            <ul className="flex align-middle gap-1">
+              <Check size={20} className="text-primary" />
               <li>{item}</li>
             </ul>
           </div>
