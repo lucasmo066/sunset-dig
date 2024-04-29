@@ -48,11 +48,11 @@ export const HoverEffect = ({
               )}
             </AnimatePresence>
             <Card>
-              <div className="flex justify-center items-center h-16 w-16 rounded-full border border-primary dark:border-zinc-100 dark:bg-neutral-900 text-primary text-xl font-bold mb-2">
+              <div className="flex justify-center items-center h-16 w-16 rounded-full border border-primary dark:border-primary dark:bg-neutral-900 text-primary text-xl font-mono mb-2">
                 {idx + 1}
               </div>
               <CardTitle className="text-primary">{item.title}</CardTitle>
-              <CardDescription>{item.description}</CardDescription>
+              <CardDescription className="items-center justify-center align-baseline">{item.description}</CardDescription>
             </Card>
           </a>
         </div>

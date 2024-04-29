@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import Hero from "@/components/Hero";
 import RootLayout from "@/app/layout";
@@ -11,30 +10,29 @@ import ContactSection from '@/components/ContactSection';
 import MembershipBenefits from '@/components/MembershipBenefits';
 
 export default function Home() {
-return (
-    
+  return (
     <RootLayout>
       <div className="flex min-h-screen flex-col items-center">
-            <Hero />
-            <MeteorSection h2Content="Harnessing the latest technologies, we craft innovative solutions to propel your online presence and drive growth. Whether you're diving into e-commerce or a small business seeking digital transformation, we're here to deliver tailored strategies for success." buttonText="Explore Projects" />
-           <StepsSection />
-           <TestimonialsSection />
-           <MembershipBenefits />
-           <MeteorSection h2Content="Backed by a 100% Money-Back Guarantee. We're confident in our ability to deliver results, and we stand by our work. If you're not satisfied with our services, we'll refund your money—no questions asked." buttonText="Where Do I Start?" />
-           <PricingSection />
-          <FaqsSection />
-          <ContactSection />
-           <footer className="w-full bg-neutral-950 border border-primary text-primary text-center py-8">
-           <Image
-                src="/3.svg"
-                alt="Sunset Digital Logo"
-                width={100}
-                height={100}
-                className='mx-auto mt-5'
-              />
-              
-             <p className="text-sm font-thin">&copy; 2024 Sunset Digital</p>
-            </footer>
+        <Hero />
+        <MeteorSection h2Content="Harnessing the latest technologies, we craft innovative solutions to propel your online presence and drive growth. Whether you're diving into e-commerce or a small business seeking digital transformation, we're here to deliver tailored strategies for success." buttonText="Explore Projects" />
+        <StepsSection />
+        <TestimonialsSection />
+        <MembershipBenefits />
+        <MeteorSection h2Content="Backed by a 100% Money-Back Guarantee. We're confident in our ability to deliver results, and we stand by our work. If you're not satisfied with our services, we'll refund your money—no questions asked." buttonText="Where Do I Start?" />
+        <PricingSection />
+        <FaqsSection />
+         <ContactSection /> {/* Pass onSubmitSuccess callback as prop */}
+        <footer className="w-full bg-neutral-950 border border-primary text-primary text-center py-8">
+          <Image
+            src="/3.svg"
+            alt="Sunset Digital Logo"
+            width={100}
+            height={100}
+            className='mx-auto mt-5'
+            loading="eager" // Set loading to 'eager'
+          />
+          <p className="text-sm font-thin">&copy; 2024 Sunset Digital</p>
+        </footer>
       </div>
     </RootLayout>
   );

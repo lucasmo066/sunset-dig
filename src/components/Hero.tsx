@@ -1,8 +1,10 @@
+// Hero component with eager loading for next/image components
 'use client'
 
 import Spline from '@splinetool/react-spline';
 import { Button } from './ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -13,14 +15,13 @@ export default function Hero() {
             <Link href="#pricing">See Plans</Link>
           </Button>
           <Button className="mx-2 px-4 py-6 md:px-6 md:py-6 lg:px-10">
-            <Link href="/contact">Schedule Call</Link>
+            <Link href="#contact">Schedule Call</Link>
           </Button>
         </div>
-        <div className="w-full  rounded-lg max-h-screen">
-        <Spline scene="https://prod.spline.design/OIHZKF-QfaUqZJvC/scene.splinecode" />
+        <div className="w-full max-h-screen">
+          <Spline scene="https://prod.spline.design/OIHZKF-QfaUqZJvC/scene.splinecode" />
         </div>
       </div>
     </section>
   );
 }
-

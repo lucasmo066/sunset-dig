@@ -80,12 +80,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
       
       <div className="flex items-center justify-center gap-4">
-        <Button className="bg-primary text-white px-10 py-6">Get Started</Button>
-        <p className="text-sm font-light">or 
-        <Link href="https://www.calendly.com">
-          <u> book a call</u>
+        <Link href="https://calendly.com/lmoraes-zay4/30min">
+        <Button className="bg-primary text-white px-10 py-6">Schedule Call</Button>
         </Link>
-        </p>
       </div>
     </div>
   );
