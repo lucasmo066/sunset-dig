@@ -8,11 +8,11 @@ const PricingSection = () => {
   const [selectedPlan, setSelectedPlan] = useState("basic");
   const [selectedPeriod, setSelectedPeriod] = useState("monthly");
 
-  const handlePlanToggle = (plan) => {
+  const handlePlanToggle = (plan:string) => {
     setSelectedPlan(plan);
   };
 
-  const handlePeriodToggle = (period) => {
+  const handlePeriodToggle = (period:string) => {
     setSelectedPeriod(period);
   };
 

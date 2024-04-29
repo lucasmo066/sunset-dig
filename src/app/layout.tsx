@@ -1,27 +1,35 @@
-import React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Inter } from "next/font/google";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "Sunset Digital",
+  description: "Sunset Digital is a digital agency that crafts innovative solutions to propel your online presence and drive growth.",
+};
+
 export default function RootLayout({
   children,
-  showNav
 }: Readonly<{
   children: React.ReactNode;
-  showNav?: boolean;
 }>) {
+  
   return (
-    <html lang="en">
-      <ThemeProvider attribute="class">
-      
+    <html lang="en" suppressHydrationWarning={true}>
+      <head>
+        {/* Add your head elements here */}
+      </head>
       <body className={inter.className}>
-          {typeof window !== 'undefined' && showNav && <Nav />}
-          {children}
-       
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main>
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
-      </ThemeProvider>
     </html>
   );
 }
+

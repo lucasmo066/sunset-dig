@@ -3,9 +3,14 @@
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { Button } from "@/components/ui/button";
 
+interface Step {
+  step: string;
+  title: string;
+  explanation: string;
+}
 
 export function StepsSection() {
-  const steps = [
+  const steps: Step[] = [
     {
       step: "1",
       title: "Set Up Initial Meeting",
@@ -35,18 +40,15 @@ export function StepsSection() {
         We make the process of getting your website up and running as simple as
         possible. Here&apos;s how it works:
       </p>
-      <HoverEffect items={steps.map((step, index) => ({
-        title: step.step,
-        description: (
-          <>
-            <h3 className="text-3xl font-normal text-primary">{step.title}</h3>
-            <p className="mt-3">{step.explanation}</p>
-          </>
-        ),
-        link: `#${index}`,
-      }))} />
+      <HoverEffect
+        items={steps.map((step, index) => ({
+          title: step.step,
+          description: step.explanation,
+          link: `#${index}`,
+        }))}
+      />
       <div className="flex justify-center">
-      <Button className="my-8 px-10 py-6">See Plans</Button>
+        <Button className="my-8 px-10 py-6">See Plans</Button>
       </div>
     </div>
   );

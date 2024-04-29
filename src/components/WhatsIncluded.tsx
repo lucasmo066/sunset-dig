@@ -1,9 +1,15 @@
+'use client'
+
 import { Check } from "lucide-react";
 import React, { useState } from "react";
 
-const WhatsIncluded = ({ selectedPlan }) => {
+interface WhatsIncludedProps {
+  selectedPlan: string;
+}
+
+const WhatsIncluded: React.FC<WhatsIncludedProps> = ({ selectedPlan }) => {
   const initialShowMoreState = false;
-  const [showMore, setShowMore] = useState(initialShowMoreState);
+  const [showMore, setShowMore] = useState<boolean>(initialShowMoreState);
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
