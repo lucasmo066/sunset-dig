@@ -1,8 +1,12 @@
+
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Nav from "@/components/Nav";
+import { Suspense } from "react";
+import Loading from "@/app/loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,16 +28,18 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
+      
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+      <Suspense fallback={<Loading />}>
       <body className={inter.className}>
-        
           <main>
           <Nav />
             {children}
           </main>
-      
       </body>
+      </Suspense>
       </ThemeProvider>
+     
     </html>
   );
 }

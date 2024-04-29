@@ -1,12 +1,24 @@
-// Hero component with eager loading for next/image components
 'use client'
 
+import { useState, useEffect } from 'react';
 import Spline from '@splinetool/react-spline';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
+import {SkeletonHomePage} from '@/components/Skeleton';
+
 
 export default function Hero() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <section className="relative flex flex-col w-full overflow-hidden">
       <div className="w-full relative z-10 flex justify-center items-center h-300 pb-20 bg-black">
@@ -19,7 +31,13 @@ export default function Hero() {
           </Button>
         </div>
         <div className="w-full max-h-screen">
-        <Spline scene="https://prod.spline.design/OIHZKF-QfaUqZJvC/scene.splinecode" />
+          {loading ? (
+            /* Show Skeleton component here */
+            <SkeletonHomePage />
+          ) : (
+            /* Once loading is complete, show Spline component */
+            <Spline scene="https://prod.spline.design/OIHZKF-QfaUqZJvC/scene.splinecode" />
+          )}
         </div>
       </div>
     </section>
