@@ -8,15 +8,15 @@ import PricingSection from '@/components/PricingSection';
 import FaqsSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import MembershipBenefits from '@/components/MembershipBenefits';
-import Nav from '@/components/Nav';
+
 
 export default function Home() {
   return (
     <RootLayout>
-       <Nav />
       <div className="flex min-h-screen flex-col items-center">
      
         <Hero />
+      
         <MeteorSection h2Content="Harnessing the latest technologies, we craft innovative solutions to propel your online presence and drive growth. Whether you're diving into e-commerce or a small business seeking digital transformation, we're here to deliver tailored strategies for success." buttonText="Explore Projects" />
         <StepsSection />
         <TestimonialsSection />

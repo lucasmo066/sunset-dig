@@ -1,11 +1,7 @@
-
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { Suspense } from "react";
-import Loading from "@/app/loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,15 +25,12 @@ export default function RootLayout({
       </head>
       
       <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-      <Suspense fallback={<Loading />}>
       <body className={inter.className}>
           <main>
             {children}
           </main>
       </body>
-      </Suspense>
       </ThemeProvider>
-     
     </html>
   );
 }
