@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
@@ -19,10 +18,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
-  rel="apple-touch-icon"
-  href="/apple-icon?<generated>"
-  type="image/<generated>"
-  sizes="<generated>"
+          rel="apple-touch-icon"
+           href="/apple-icon?<generated>"
+           type="image/<generated>"
+            sizes="<generated>"
 />
 
         <title>Sunset Digital</title>
