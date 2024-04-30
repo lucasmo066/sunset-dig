@@ -1,9 +1,10 @@
 'use client'
 
 import React from "react";
-import { motion } from "framer-motion"; // Import motion from Framer Motion
+import { motion } from "framer-motion"; 
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -35,8 +36,12 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.7 }}
         >
         <div className="flex flex-row gap-8 items-center justify-center mt-20">
+          <Link href="#pricing">
           <Button variant="outline" className="mt-8 bg-transparent hover:bg-primary hover:border-primary border-2 border-white text-white">See Plans</Button>
+          </Link>
+          <Link href="https://calendly.com/lmoraes-zay4/30min">
           <Button className="mt-8">Schedule Call</Button>
+          </Link>
         </div>
         </motion.div>
       </div>

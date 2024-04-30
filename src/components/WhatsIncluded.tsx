@@ -16,7 +16,7 @@ const WhatsIncluded: React.FC<WhatsIncludedProps> = ({ selectedPlan }) => {
   };
 
   const basicIncludedItems = [
-    "AI Powered CMS",
+    "Easy to use CMS",
     "Up to 1 team member",
     "Up to 1 requests at a time",
     "Analytics Integrations",
@@ -30,11 +30,11 @@ const WhatsIncluded: React.FC<WhatsIncludedProps> = ({ selectedPlan }) => {
     "Unlimited Content/SEO Requests",
     "Hosting & API Uptime Guarantee",
     "Basic AI Workflows & Automation",
-    "All-in-One HIPAA Compliant Website",
+    "All-in-One ADA Compliant Website",
   ];
 
   const growthIncludedItems = [
-    "AI Powered CMS",
+    "Easy to use CMS",
     "Up to 5 team members",
     "Up to 2 requests at a time",
     "Analytics Integrations", 
@@ -48,7 +48,7 @@ const WhatsIncluded: React.FC<WhatsIncludedProps> = ({ selectedPlan }) => {
     "Unlimited Content/SEO Requests",
     "Hosting & API Uptime Guarantee",
     "Advanced AI Workflows & Automation",
-    "All-in-One HIPAA Compliant Website",
+    "All-in-One ADA Compliant Website",
   ];
 
   const includedItems = selectedPlan === 'growth' ? growthIncludedItems : basicIncludedItems;

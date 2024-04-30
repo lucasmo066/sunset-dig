@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { IconCash, IconHome, IconMessage, } from "@tabler/icons-react";
+import { IconCash, IconCircleChevronUp, IconHome, IconMessage, } from "@tabler/icons-react";
 
 
 export function FloatingNavbar() {
@@ -9,7 +9,7 @@ export function FloatingNavbar() {
     {
       name: "Home",
       link: "/",
-      icon: <IconHome className="font-extralight h-8 w-8 text-neutral-500 dark:text-primary" />,
+      icon: <IconCircleChevronUp className="h-12 w-12 text-neutral-500 dark:text-primary" />,
     },
     {
       name: "Pricing",

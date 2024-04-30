@@ -20,14 +20,14 @@ const PricingSection = () => {
     basic: {
       name: "Basic",
       description: "One request at a time. Best for single location businesses.",
-      monthlyPrice: 400,
-      yearlyPrice: 250,
+      monthlyPrice: 200,
+      yearlyPrice: 100,
     },
     growth: {
-      name: "Growth",
+      name: "Premium",
       description: "Double the requests. Best for growing, multi-location businesses.",
-      monthlyPrice: 700,
-      yearlyPrice: 550,
+      monthlyPrice: 400,
+      yearlyPrice: 350,
     },
   };
 

@@ -3,6 +3,7 @@ import ToggleButton from "./ToggleButton";
 import { Button } from "@/components/ui/button";
 import WhatsIncluded from "./WhatsIncluded";
 import Link from "next/link";
+import { IconInfoCircle } from "@tabler/icons-react";
 
 interface PricingCardProps {
   handlePlanToggle: (plan: string) => void;
@@ -30,9 +31,15 @@ const PricingCard: React.FC<PricingCardProps> = ({
     <div className="bg-zinc-100 text-black px-6 py-10 rounded-lg">
       <div>
         <div className="flex justify-between items-start">
+          <div>
             <h3 className="text-3xl font-normal mb-4">
                 Membership
             </h3>
+            <div className="flex items-center gap-2 text-sm text-gray-500">
+            </div>
+          </div>
+           
+            
             <div className="border border-gray-300 bg-white rounded-full flex justify-between">
                 <ToggleButton
                 active={selectedPlan === "basic"}
@@ -44,7 +51,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
                 active={selectedPlan === "growth"}
                 onClick={() => handlePlanToggle("growth")}
                 >
-                    Growth
+                    Premium
                 </ToggleButton>
             </div>
         </div>
