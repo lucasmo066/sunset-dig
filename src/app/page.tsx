@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Hero from "@/components/Hero";
+import {Hero} from "@/components/Hero";
 import RootLayout from "@/app/layout";
 import MeteorSection from '@/components/MeteorSection';
 import { StepsSection } from '@/components/StepsSection';
@@ -8,11 +8,14 @@ import PricingSection from '@/components/PricingSection';
 import FaqsSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import MembershipBenefits from '@/components/MembershipBenefits';
+import Nav from '@/components/Nav';
 
 export default function Home() {
   return (
     <RootLayout>
+       <Nav />
       <div className="flex min-h-screen flex-col items-center">
+     
         <Hero />
         <MeteorSection h2Content="Harnessing the latest technologies, we craft innovative solutions to propel your online presence and drive growth. Whether you're diving into e-commerce or a small business seeking digital transformation, we're here to deliver tailored strategies for success." buttonText="Explore Projects" />
         <StepsSection />
@@ -29,7 +32,7 @@ export default function Home() {
             width={100}
             height={100}
             className='mx-auto mt-5'
-            loading="eager" // Set loading to 'eager'
+            loading="eager"
           />
           <p className="text-sm font-thin">&copy; 2024 Sunset Digital</p>
         </footer>

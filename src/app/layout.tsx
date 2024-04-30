@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import Nav from "@/components/Nav";
 import { Suspense } from "react";
 import Loading from "@/app/loading";
 
@@ -33,7 +32,6 @@ export default function RootLayout({
       <Suspense fallback={<Loading />}>
       <body className={inter.className}>
           <main>
-          <Nav />
             {children}
           </main>
       </body>

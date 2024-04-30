@@ -1,45 +1,23 @@
 'use client'
 
-import { useState, useEffect } from 'react';
-import Spline from '@splinetool/react-spline';
-import { Button } from './ui/button';
-import Link from 'next/link';
-import Image from 'next/image';
-import {SkeletonHomePage} from '@/components/Skeleton';
-
-
-export default function Hero() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
+import React from "react";
+import { WavyBackground } from "@/components/ui/wavy-background";
+import { Button } from "@/components/ui/button";
+ 
+export function Hero() {
   return (
-    <section className="relative flex flex-col w-full overflow-hidden">
-      <div className="w-full relative z-10 flex justify-center items-center h-300 pb-20 bg-black">
-        <div className="absolute inset-x-0 bottom-12 md:bottom-40 flex flex-row justify-center">
-          <Button variant="outline" className="border border-primary text-primary bg-transparent mx-2 px-4 py-6 md:px-6 md:py-6 lg:px-10">
-            <Link href="#pricing">See Plans</Link>
-          </Button>
-          <Button className="mx-2 px-4 py-6 md:px-6 md:py-6 lg:px-10">
-            <Link href="https://calendly.com/lmoraes-zay4/30min">Schedule Call</Link>
-          </Button>
-        </div>
-        <div className="w-full max-h-screen">
-          {loading ? (
-            /* Show Skeleton component here */
-            <SkeletonHomePage />
-          ) : (
-            /* Once loading is complete, show Spline component */
-            <Spline scene="https://prod.spline.design/OIHZKF-QfaUqZJvC/scene.splinecode" />
-          )}
-        </div>
+    <WavyBackground className="h-1/2 mx-auto">
+      <h1 className="text-5xl md:text-7xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent pb-3 mb-4">
+        Sunset Digital
+      </h1>
+      <p className="text-2xl md:text-3xl mt-4 text-white font-extralight inter-var text-center">
+        Empowering Businesses with Cutting-Edge Digital Solutions
+      </p>
+      <div className="flex flex-row items-center justify-center mt-20">
+        <Button variant="outline" className="mt-8 bg-transparent hover:bg-primary hover:border-primary border-2 border-white text-white">See Plans</Button>
+        <Button className="mt-8 ml-4">Schedule Call</Button>
+
       </div>
-    </section>
+    </WavyBackground>
   );
 }
