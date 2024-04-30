@@ -94,7 +94,7 @@ const CARDS = [
     designation: "CEO, Alliance Auto Brokers",
     content: (
       <p>
-        &quot;Sunset Digital has been a game-changer. Their expertise in innovative solutions has propelled our online presence and credibility. I can focus on doing my job because I know they&apos;ll handle the site!&quot;
+        &quot;Sunset Digital has been a <Highlight>game-changer</Highlight>. Their expertise in innovative solutions has propelled our <Highlight>online presence and credibility</Highlight>. I can focus on doing my job because I know they&apos;ll handle the site!&quot;
       </p>
     ),
   },
@@ -104,7 +104,7 @@ const CARDS = [
     designation: "Owner, Sahara Grill",
     content: (
       <p>
-        &quot;We did not have much of an online presence before Lucas and Sunset came along. They have helped us immensely with a top of the line website that does well on SEO. They really do go above and beyond! &quot;
+        &quot;We did not have much of an online presence before Lucas and Sunset came along. They have helped us immensely with a <Highlight>top of the line website that does well on SEO</Highlight>. They really do go <Highlight>above and beyond!</Highlight>&quot;
       </p>
     ),
   },
@@ -114,7 +114,7 @@ const CARDS = [
     designation: "Marketing Manager, LMN Corporation",
     content: (
       <p>
-        &quot;Sunset Digital provides outstanding customer service and websites that surpass the competition. With their membership program, managing our website has been a breeze!&quot;
+        &quot;Sunset Digital provides <Highlight>outstanding customer service</Highlight> and websites that surpass the competition. With their membership program, managing our website has been a breeze!&quot;
       </p>
     ),
   },
