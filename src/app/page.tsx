@@ -8,18 +8,17 @@ import PricingSection from '@/components/PricingSection';
 import FaqsSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import MembershipBenefits from '@/components/MembershipBenefits';
-import { FloatingNavbar } from "@/components/NavigationMenu"; // Import the FloatingNavDemo component
+import { FloatingNavbar } from "@/components/NavigationMenu";
 
 export default function Home() {
   return (
     <RootLayout>
       <div className="flex min-h-screen flex-col items-center">
         <Hero />
-        <MeteorSection h2Content="Harnessing the latest technologies, we craft innovative solutions to propel your online presence and drive growth. Whether you're diving into e-commerce or a small business seeking digital transformation, we're here to deliver tailored strategies for success." buttonText="Explore Projects" />
+        {/* TODO: Add about section */}
         <StepsSection />
         <TestimonialsSection />
         <MembershipBenefits />
-        <MeteorSection h2Content="Backed by a 100% Money-Back Guarantee. We're confident in our ability to deliver results, and we stand by our work. If you're not satisfied with our services, we'll refund your money—no questions asked." buttonText="Where Do I Start?" />
         <PricingSection />
         <FaqsSection />
         <ContactSection />

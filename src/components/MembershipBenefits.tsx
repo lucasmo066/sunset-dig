@@ -4,9 +4,7 @@ import { CheckCheck, ExpandIcon, HandPlatterIcon, StoreIcon } from "lucide-react
 export default function MembershipBenefits() {
 return (
     <div className="w-full h-full my-10 px-4 md:px-10 xl:w-3/4">
-        <h2 className="mt-10 text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">Membership Benefits</h2>
-        <p className="text-center font-extralight mb-20 md:text-lg">Perks so good you&apos;ll never need to go anywhere else for your design. Seriously.</p>
-        
+        <h2 className="mt-10 text-5xl md:text-6xl text-center bg-gradient-to-br from-orange-400 to-orange-700 bg-clip-text font-semibold tracking-tight text-transparent mb-4">Why Choose Sunset Digital?</h2>        
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             <div className="border border-gray-200 bg-zinc-100 dark:border-gray-700 dark:bg-neutral-900 py-8 px-4">
                 <h2 className="text-2xl font-semibold text-primary text-center pb-4">Fixed Monthly Rate</h2>

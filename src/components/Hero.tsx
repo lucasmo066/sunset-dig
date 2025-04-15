@@ -36,13 +36,14 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.7 }}
         >
         <div className="flex flex-row gap-8 items-center justify-center mt-10">
-          <Link href="#pricing">
-          <Button variant="outline" className="mt-8 bg-transparent hover:bg-primary hover:border-primary border-2 border-white text-white">See Plan & Pricing</Button>
-          </Link>
-          {/* TODO: Add link to calendly */}
-          <Link href="">
+           {/* TODO: Add link to calendly */}
+           <Link href="">
           <Button className="mt-8">Let’s Talk Growth</Button>
           </Link>
+
+          <Link href="#pricing">
+          <Button variant="outline" className="mt-8 bg-transparent hover:bg-primary hover:border-primary border-2 border-white text-white">See Plan & Pricing</Button>
+          </Link> 
         </div>
         </motion.div>
       </div>
